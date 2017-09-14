@@ -5,7 +5,7 @@ function init() {
 
   document.querySelector('body').addEventListener('keydown', function(e){
     let key = parseInt(e.detail || e.which);
-    if (key === code[i]) {
+    if (key === code[index]) {
       index++;
       if (index === code.length) {
         alert('Konami!')
@@ -14,6 +14,6 @@ function init() {
     } else {
       index = 0;
     }
-    debugger
+    debugger;
   })
 }
